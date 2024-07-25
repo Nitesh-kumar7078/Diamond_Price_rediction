@@ -1,0 +1,27 @@
+[ 2024-07-03 12:37:01,669 ] 22 root - INFO - Data Ingestion starts
+[ 2024-07-03 12:37:01,804 ] 25 root - INFO - Dataset read as pandas dataframe
+[ 2024-07-03 12:37:02,457 ] 29 root - INFO - Train test split
+[ 2024-07-03 12:37:03,150 ] 36 root - INFO - Ingestion of data is completed
+[ 2024-07-03 12:37:03,286 ] 90 root - INFO - Read train and test data completed
+[ 2024-07-03 12:37:03,292 ] 91 root - INFO - Train Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   14868   0.50      Ideal     D     SI1   62.1   57.0  5.05  5.08  3.14   1355
+1  165613   2.00  Very Good     G     SI2   59.5   57.0  8.08  8.15  4.89  14691
+2   96727   0.27    Premium     E    VVS1   60.5   59.0  4.19  4.16  2.52    844
+3  145593   0.32    Premium     I    VVS1   61.2   59.0  4.43  4.44  2.71    707
+4  118689   1.19      Ideal     H     SI1   62.5   56.0  6.77  6.81  4.23   5797
+[ 2024-07-03 12:37:03,292 ] 92 root - INFO - Test Dataframe Head  : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   14868   0.50      Ideal     D     SI1   62.1   57.0  5.05  5.08  3.14   1355
+1  165613   2.00  Very Good     G     SI2   59.5   57.0  8.08  8.15  4.89  14691
+2   96727   0.27    Premium     E    VVS1   60.5   59.0  4.19  4.16  2.52    844
+3  145593   0.32    Premium     I    VVS1   61.2   59.0  4.43  4.44  2.71    707
+4  118689   1.19      Ideal     H     SI1   62.5   56.0  6.77  6.81  4.23   5797
+[ 2024-07-03 12:37:03,292 ] 94 root - INFO - Obtaining preprocessing object
+[ 2024-07-03 12:37:03,292 ] 36 root - INFO - Data Transformation initiated
+[ 2024-07-03 12:37:03,292 ] 46 root - INFO - Pipeline Initiated
+[ 2024-07-03 12:37:03,421 ] 115 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2024-07-03 12:37:03,421 ] 126 root - INFO - Processsor pickle in created and saved
+[ 2024-07-03 12:37:03,421 ] 24 root - INFO - Splitting Dependent and Independent variable from train and test data
+[ 2024-07-03 12:37:11,244 ] 45 root - INFO - Model Report : {'LinearRegresstion': 0.9363450360519529, 'Lasso': 0.9363378263504134, 'Ridge': 0.936344961386819, 'Elasticnet': 0.8546900887438343, 'DecisionTree': 0.999995113669534}
+[ 2024-07-03 12:37:11,246 ] 56 root - INFO - Best Model Found , Model Name : DecisionTree , R2 Score : 0.999995113669534
